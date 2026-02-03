@@ -1,6 +1,6 @@
 /* ============================================================
    Personal Website — Styles
-   Palette: warm neutrals, restrained, Apple-inspired
+   Palette: Cool Ocean — light blue-gray, clean and professional
    Typography: Newsreader (serif display) + Inter (sans body)
    ============================================================ */
 
@@ -12,16 +12,16 @@
 }
 
 :root {
-  --color-bg: #f6f3ee;
-  --color-bg-warm: #efe9df;
+  --color-bg: #f3f6f8;
+  --color-bg-warm: #e8eef2;
   --color-surface: #ffffff;
-  --color-text: #1a1a1a;
-  --color-text-secondary: #5c5850;
-  --color-text-tertiary: #8a8478;
-  --color-accent: #3d3832;
-  --color-border: #ddd6cb;
-  --color-border-light: #e8e2d8;
-  --color-card-hover: #faf7f2;
+  --color-text: #1a2128;
+  --color-text-secondary: #566170;
+  --color-text-tertiary: #7a8594;
+  --color-accent: #2d3a47;
+  --color-border: #d6dce2;
+  --color-border-light: #e4e9ed;
+  --color-card-hover: #f8fafb;
   --font-serif: 'Newsreader', Georgia, 'Times New Roman', serif;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
   --container-max: 860px;
@@ -51,7 +51,7 @@ body {
 }
 
 ::selection {
-  background: #d4cdc2;
+  background: #c5d4e0;
   color: var(--color-text);
 }
 
@@ -69,7 +69,7 @@ body {
   left: 0;
   right: 0;
   z-index: 100;
-  background: rgba(246, 243, 238, 0.85);
+  background: rgba(243, 246, 248, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--color-border-light);
@@ -284,6 +284,52 @@ body {
   color: var(--color-text-secondary);
   line-height: 1.6;
   max-width: 480px;
+}
+
+/* --- Education --- */
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.education-entry {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: var(--space-md);
+  padding: var(--space-md) 0;
+  border-top: 1px solid var(--color-border-light);
+}
+
+.education-entry:last-child {
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.education-year {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-text-tertiary);
+  letter-spacing: 0.02em;
+}
+
+.education-degree {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.15rem;
+}
+
+.education-school {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.1rem;
+}
+
+.education-location {
+  font-size: 0.75rem;
+  color: var(--color-text-tertiary);
 }
 
 /* --- Contact --- */
@@ -505,6 +551,11 @@ body {
     flex-direction: row;
     gap: var(--space-sm);
     align-items: baseline;
+  }
+
+  .education-entry {
+    grid-template-columns: 1fr;
+    gap: var(--space-xs);
   }
 
   .contact-link {
