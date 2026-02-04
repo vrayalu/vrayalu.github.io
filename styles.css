@@ -520,6 +520,10 @@ body {
 
 /* --- Responsive --- */
 @media (max-width: 680px) {
+  .nav-links li:last-child {
+    display: none;
+  }
+
   .nav-links {
     gap: var(--space-sm);
   }
