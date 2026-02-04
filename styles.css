@@ -1,6 +1,6 @@
 /* ============================================================
    Personal Website — Styles
-   Palette: Warm neutral — soft cream background, clean and professional
+   Palette: Warm neutrals — off-white / beige tones, professional
    Typography: Newsreader (serif display) + Inter (sans body)
    ============================================================ */
 
@@ -12,16 +12,16 @@
 }
 
 :root {
-  --color-bg: #f2f1ee;
-  --color-bg-warm: #eae9e4;
+  --color-bg: #f6f3ee;
+  --color-bg-warm: #efe9df;
   --color-surface: #ffffff;
-  --color-text: #2b2b29;
-  --color-text-secondary: #5a5a56;
-  --color-text-tertiary: #8a8a84;
-  --color-accent: #2b2b29;
-  --color-border: #dbdbd5;
-  --color-border-light: #e5e5df;
-  --color-card-hover: #f8f7f5;
+  --color-text: #1a1a1a;
+  --color-text-secondary: #5c5850;
+  --color-text-tertiary: #8a8478;
+  --color-accent: #3d3832;
+  --color-border: #ddd6cb;
+  --color-border-light: #e8e2d8;
+  --color-card-hover: #faf7f2;
   --font-serif: 'Newsreader', Georgia, 'Times New Roman', serif;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
   --container-max: 860px;
@@ -51,7 +51,7 @@ body {
 }
 
 ::selection {
-  background: #d4d3cc;
+  background: #d4cdc2;
   color: var(--color-text);
 }
 
@@ -69,7 +69,7 @@ body {
   left: 0;
   right: 0;
   z-index: 100;
-  background: rgba(242, 241, 238, 0.85);
+  background: rgba(246, 243, 238, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--color-border-light);
